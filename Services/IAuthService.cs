@@ -1,6 +1,8 @@
 ﻿namespace TodoApi.Services
 {
-    public class IAuthService
+    public interface IAuthService
     {
+        Task<string> Register(string email, string password);
+        Task<string> Login(string email, string password);
     }
 }
